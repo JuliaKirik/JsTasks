@@ -22,4 +22,10 @@ if (index<=16) {
 }
 
 // Task 2. Leap-year
-let year = +prompt (`Веедите год`);
+let year = +prompt (`Введите год`);
+let div = year % 4;
+if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+    console.log (`Год ${year} - высокосный` )
+} else {
+    console.log (`Год ${year} - не есть высокосный` )
+}
